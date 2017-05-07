@@ -11,8 +11,8 @@ public:
 	void readFromFile();
 
 	void insert_person(person p_insert);
-	void update_person(string name_para, char *phone_para);
-	bool delete_person(string name_para,char *phone_para);
+	void update_person(string name_para, string *phone_para);
+	bool delete_person(string name_para,string *phone_para);
 	void searchByName(string name_para);
 	void searchByPhone(char *phone_para);
 	void searchByAddress(string address_para);//fuzzy search

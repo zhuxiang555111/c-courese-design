@@ -18,7 +18,13 @@ void contact::readFromFile()
 		while (read_in.getline(buffer, 256))
 		{
 			read_out.name = strtok_s(buffer, " ", &cptr);
-			
+			read_out.sex = strtok_s(buffer, " ", &cptr);
+			read_out.phoneNumber = strtok_s(buffer, " ", &cptr);
+			read_out.address = strtok_s(buffer, " ", &cptr);
+			read_out.postCode = strtok_s(buffer, " ", &cptr);
+			read_out.email = strtok_s(buffer, " ", &cptr);
+			read_out.qqNumber = strtok_s(buffer, " ", &cptr);
+			read_out.relationType = strtok_s(buffer, " ", &cptr);
 		}
 	}
 }
@@ -28,7 +34,7 @@ void contact::insert_person(person p_insert)
 	contactBook.push_back(p_insert);
 }
 
-void contact::update_person(string name_para, char * phone_para)
+void contact::update_person(string name_para, string * phone_para)
 {
 	;
 	person update;
@@ -48,7 +54,7 @@ void contact::update_person(string name_para, char * phone_para)
 	}
 }
 
-bool contact::delete_person(string name_para, char * phone_para)
+bool contact::delete_person(string name_para, string * phone_para)
 {
 	searchPrivFind.name = "";
 	searchPriv(name_para, phone_para);

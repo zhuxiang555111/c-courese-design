@@ -9,10 +9,10 @@ class person
 public:
 	string name;
 	string sex;
-	char phoneNumber[20];
+	string phoneNumber;
 	string address;
-	char  postCode[6];
+	string  postCode;
 	string email;
-	char qqNumber[15];
-	char relationType[20];
+	string qqNumber;
+	string relationType;
 };
