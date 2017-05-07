@@ -19,17 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="adminSystem.h" />
-    <ClInclude Include="AVLNode.h" />
-    <ClInclude Include="AVLTree.h" />
+    <ClInclude Include="contact.h" />
     <ClInclude Include="fileReader.h" />
-    <ClInclude Include="info.h" />
+    <ClInclude Include="person.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="adminSystem.cpp" />
-    <ClCompile Include="AVLTree.cpp" />
-    <ClCompile Include="fileReadercpp.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="contact.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
