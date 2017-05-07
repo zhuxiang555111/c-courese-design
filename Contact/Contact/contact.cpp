@@ -34,7 +34,7 @@ void contact::insert_person(person p_insert)
 	contactBook.push_back(p_insert);
 }
 
-void contact::update_person(string name_para, string * phone_para)
+void contact::update_person(string name_para, string  phone_para)
 {
 	;
 	person update;
@@ -54,7 +54,7 @@ void contact::update_person(string name_para, string * phone_para)
 	}
 }
 
-bool contact::delete_person(string name_para, string * phone_para)
+bool contact::delete_person(string name_para, string  phone_para)
 {
 	searchPrivFind.name = "";
 	searchPriv(name_para, phone_para);
@@ -76,7 +76,7 @@ void contact::searchByName(string name_para)
 	}
 }
 
-void contact::searchByPhone(char * phone_para)
+void contact::searchByPhone(string phone_para)
 {
 	for (iter = contactBook.begin(); iter != contactBook.end(); iter++)
 	{
@@ -112,7 +112,7 @@ void contact::sortByName(ostream & out)
 	}
 }
 
-void contact::searchPriv(string name_para_priv, char * phone_para_priv)
+void contact::searchPriv(string name_para_priv, string phone_para_priv)
 {
 	for (iter = contactBook.begin(); iter != contactBook.end(); iter++)
 	{
